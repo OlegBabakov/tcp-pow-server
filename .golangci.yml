@@ -1,0 +1,49 @@
+run:
+  go: 1.19
+  timeout: 1m
+
+linters:
+  enable:
+    - asciicheck
+    #- depguard
+    - dogsled
+    - errcheck
+    - exhaustive
+    - exportloopref
+    - gocognit
+    - gocyclo
+    - gofmt
+    - gofumpt
+    - goheader
+    - goimports
+    - gomodguard
+    - goprintffuncname
+    - gosimple
+    - govet
+    - ineffassign
+    - misspell
+    - nakedret
+    - nestif
+    - rowserrcheck
+    - sqlclosecheck
+    - staticcheck
+    - typecheck
+    - unconvert
+    - unused
+    - whitespace
+    - durationcheck
+    - forbidigo
+    - forcetypeassert
+    - importas
+    - nilerr
+    - predeclared
+    - thelper
+    - tparallel
+    - wastedassign
+    - promlinter
+    - bodyclose
+    - godot
+    - funlen
+    - wsl
+    - gocritic
+    - unparam

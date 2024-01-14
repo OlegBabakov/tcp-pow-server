@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: .deploy/Dockerfile.server
+    container_name: pow-server
+    restart: unless-stopped
+
+  client:
+    build:
+      context: .
+      dockerfile: .deploy/Dockerfile.client
+    container_name: pow-client
+    environment:
+      - SERVER_ADDR=server:8000
+    depends_on:
+      - server
+    links:
+      - server
