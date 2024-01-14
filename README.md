@@ -2,8 +2,8 @@
 
 ## Small improvements
 
-- "workers" amount limiter for incoming connections [internal/server/server.go](internal/server/server.go#53)
-- "throttling" mechanism when the server closes connections if there are no available "workers" for certain time to handle a connection [internal/server/server.go](internal/server/server.go#99)
+- "workers" amount limiter for incoming connections [internal/server/server.go](internal/server/server.go#L53)
+- "throttling" mechanism when the server closes connections if there are no available "workers" for certain time to handle a connection [internal/server/server.go](internal/server/server.go#L99)
 
 ## Getting started
 
